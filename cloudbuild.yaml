@@ -6,5 +6,5 @@ steps:
   args: ['push','gcr.io/hallowed-trail-385003/cloud-build-trigger']
 
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run','deploy','cbt-cloud-run','--image','gcr.io/hallowed-trail-385003/cloud-build-trigger','--region','us-central1','--platform','managed','--allow-unauthenticated']
+  args: ['run','deploy','cbt-cloud-run','--image','gcr.io/hallowed-trail-385003/cloud-build-trigger','--port','0.0.0.0','--region','us-central1','--platform','managed','--allow-unauthenticated']
 
